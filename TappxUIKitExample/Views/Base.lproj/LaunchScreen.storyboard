@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ReneBieder-FaktumSemiBold.otf">
+            <string>Faktum-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvy-zf-qet" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="503"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASm-55-pxG">
+                                        <rect key="frame" x="20.5" y="133" width="279" height="237"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo tappx" translatesAutoresizingMaskIntoConstraints="NO" id="stw-iV-Iea">
+                                                <rect key="frame" x="75.5" y="20" width="128" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="OAU-TG-eca"/>
+                                                    <constraint firstAttribute="width" constant="128" id="Tvl-vu-EQ9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tappx SDK App" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8B5-Nr-uA4">
+                                                <rect key="frame" x="53.5" y="188" width="172" height="29"/>
+                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="Faktum-SemiBold" family="Faktum" pointSize="23"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8B5-Nr-uA4" firstAttribute="centerX" secondItem="ASm-55-pxG" secondAttribute="centerX" id="Dn0-NP-UUD"/>
+                                            <constraint firstItem="stw-iV-Iea" firstAttribute="centerX" secondItem="ASm-55-pxG" secondAttribute="centerX" id="Lae-jz-LmC"/>
+                                            <constraint firstAttribute="bottom" secondItem="8B5-Nr-uA4" secondAttribute="bottom" constant="20" id="WcH-PK-L49"/>
+                                            <constraint firstAttribute="width" constant="279" id="dJW-sx-X74"/>
+                                            <constraint firstItem="8B5-Nr-uA4" firstAttribute="top" secondItem="stw-iV-Iea" secondAttribute="bottom" constant="40" id="dQh-KQ-Yzu"/>
+                                            <constraint firstItem="stw-iV-Iea" firstAttribute="top" secondItem="ASm-55-pxG" secondAttribute="top" constant="20" id="svW-cx-6I1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764706370000004" green="0.2117646933" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="ASm-55-pxG" firstAttribute="centerY" secondItem="qvy-zf-qet" secondAttribute="centerY" id="JpZ-BF-zze"/>
+                                    <constraint firstItem="ASm-55-pxG" firstAttribute="centerX" secondItem="qvy-zf-qet" secondAttribute="centerX" id="O1N-d9-fpB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZZ-qX-Wby" userLabel="FootView">
+                                <rect key="frame" x="0.0" y="503" width="320" height="65"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="techsoulogy" translatesAutoresizingMaskIntoConstraints="NO" id="fgt-vV-pHs">
+                                        <rect key="frame" x="40" y="8" width="240" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="EFE-Ye-2Ti"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039217590000001" green="0.015686275440000001" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="fgt-vV-pHs" firstAttribute="top" secondItem="IZZ-qX-Wby" secondAttribute="top" constant="8" id="7sB-Ms-9T2"/>
+                                    <constraint firstItem="fgt-vV-pHs" firstAttribute="centerX" secondItem="IZZ-qX-Wby" secondAttribute="centerX" id="FH6-gg-Rnd"/>
+                                    <constraint firstAttribute="height" constant="65" id="JCL-G5-0KX"/>
+                                    <constraint firstAttribute="bottom" secondItem="fgt-vV-pHs" secondAttribute="bottom" constant="8" id="UTw-8y-MQk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IZZ-qX-Wby" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EI2-95-3SR"/>
+                            <constraint firstAttribute="bottom" secondItem="IZZ-qX-Wby" secondAttribute="bottom" id="OTb-yP-eS0"/>
+                            <constraint firstItem="qvy-zf-qet" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QS0-0E-GiZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IZZ-qX-Wby" secondAttribute="trailing" id="WSI-Vr-oeO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qvy-zf-qet" secondAttribute="trailing" id="b60-BV-LOa"/>
+                            <constraint firstItem="qvy-zf-qet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bvx-bO-1Y4"/>
+                            <constraint firstItem="IZZ-qX-Wby" firstAttribute="top" secondItem="qvy-zf-qet" secondAttribute="bottom" id="fbt-je-ryb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="373.94366197183098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo tappx" width="419.70001220703125" height="422.89999389648438"/>
+        <image name="techsoulogy" width="717.20001220703125" height="58.599998474121094"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

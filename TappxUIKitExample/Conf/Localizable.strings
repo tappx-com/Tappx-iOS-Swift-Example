@@ -1,0 +1,46 @@
+//
+//  Localizable.strings
+//  TappxUIKitExample
+//
+//  Created by Sara Diaz Perez on 5/5/25.
+//
+
+
+/* TEXTS */
+"app_name" = "Tappx SDK App";
+"text.version" = "SDK Version: ";
+"text.status" = "Status";
+"empty" = "";
+
+"banner" = "Banner";
+"MREC" = "MREC";
+"interstitial" = "Interstitial";
+"rewarded" = "Rewarded";
+
+"status.loaded" = " loaded successfully!";
+"status.failed" = " failed to load: ";
+"status.pressed" = " pressed";
+"status.closed" = " closed";
+"status.appeared" = " appeared";
+"status.clicked" = " clicked";
+"status.dismissed" = " dismissed";
+"status.playbackfailed" = " playback failed";
+"status.completed" = " video completed";
+"status.reward" = "User earned reward";
+
+
+/* BUTTONS */
+"button.banner" = "Banner";
+"button.MREC" = "MREC";
+"button.interstitial" = "Interstitial";
+"button.rewarded" = "Rewarded";
+
+"button.load" = "Load Ad";
+"button.ready" = "Is the ad ready?";
+"button.show" = "Show the Ad";
+
+/* NAVIGATION */
+"navigation.name.banner" = "Banner";
+"navigation.name.fullScreen" = "FullScreen";
+"navigation.id.banner" = "goToBannerView";
+"navigation.id.fullScreen" = "goToFullScreen";
