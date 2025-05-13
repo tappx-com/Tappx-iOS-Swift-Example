@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TappxFramework
 
 class MainView: UIViewController {
     @IBOutlet weak var versionText: UILabel!
@@ -73,7 +74,7 @@ class MainView: UIViewController {
         rewardedLabel.font = UIFont.bodyFont()
         rewardedLabel.textColor = ColorTheme.primaryVariant
         
-        versionText.text = "text.version".localized + "4.0"
+        versionText.text = "\("text.version".localized) \(TappxFramework.sdkVersion())"
         versionText.font = UIFont.secondFont()
         versionText.textColor = ColorTheme.primaryVariant
         
