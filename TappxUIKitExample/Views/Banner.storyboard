@@ -85,6 +85,7 @@
                     </view>
                     <connections>
                         <outlet property="advertisementView" destination="FZs-ra-EW4" id="YRy-Vp-gpO"/>
+                        <outlet property="backgroundView" destination="5EZ-qb-Rvc" id="fbh-xJ-dGT"/>
                         <outlet property="statusInputText" destination="KY6-rq-i6y" id="S4H-3G-jjl"/>
                         <outlet property="statusInputView" destination="i3P-cm-mOJ" id="COU-So-rS5"/>
                         <outlet property="statusLabel" destination="gg4-1x-SAJ" id="bHh-yA-oFQ"/>

@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSV-3o-sGw" userLabel="BannerButton">
                                 <rect key="frame" x="40" y="137" width="334" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="gKE-dT-6EX">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKE-dT-6EX">
                                         <rect key="frame" x="16" y="16" width="48" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="Dyr-9c-fEX"/>
@@ -200,10 +200,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tappx SDK App" largeTitleDisplayMode="always" id="eKz-77-W7p"/>
                     <connections>
+                        <outlet property="MRECImage" destination="3DT-LD-Lhe" id="gTC-55-Q5Q"/>
                         <outlet property="MRECLabel" destination="Tsu-mC-aud" id="lN8-cB-Qp7"/>
+                        <outlet property="bannerImage" destination="gKE-dT-6EX" id="0ub-Y6-Zg3"/>
                         <outlet property="bannerLabel" destination="jTU-vO-2Tr" id="H3g-sZ-s5N"/>
+                        <outlet property="interstitialImage" destination="rty-cU-Y1V" id="gVw-GE-V6n"/>
                         <outlet property="interstitialLabel" destination="G2i-cg-2Bp" id="gMJ-1L-fHL"/>
                         <outlet property="mainView" destination="5EZ-qb-Rvc" id="1kO-vR-H9Y"/>
+                        <outlet property="rewardedImage" destination="4bj-Ox-p69" id="ib8-y7-FIR"/>
                         <outlet property="rewardedLabel" destination="bHK-Ue-P8G" id="ynk-Ga-zm6"/>
                         <outlet property="versionText" destination="dit-la-9Ac" id="wR3-cR-eQK"/>
                     </connections>

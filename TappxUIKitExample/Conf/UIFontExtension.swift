@@ -9,18 +9,18 @@ import UIKit
 
 extension UIFont {
     static func titleFont() -> UIFont {
-        return UIFont(name: "IBMPlexSans-SemiBold", size: 20) ?? UIFont.systemFont(ofSize: 20)
+        return UIFont(name: "IBMPlexSans-SemiBold", size: 22) ?? UIFont.systemFont(ofSize: 22)
     }
     
     static func bodyFont() -> UIFont {
-        return UIFont(name: "IBMPlexSans-Mediumk", size: 16) ?? UIFont.systemFont(ofSize: 16)
+        return UIFont(name: "IBMPlexSans-Mediumk", size: 18) ?? UIFont.systemFont(ofSize: 18)
     }
     
     static func headerFont() -> UIFont {
-        return UIFont(name: "ReneBieder-FaktumSemiBold", size: 17) ?? UIFont.systemFont(ofSize: 17, weight: .bold)
+        return UIFont(name: "ReneBieder-FaktumSemiBold", size: 26) ?? UIFont.systemFont(ofSize: 26, weight: .bold)
     }
     
     static func secondFont() -> UIFont {
-        return UIFont(name: "IBMPlexSans-Mediumk", size: 14) ?? UIFont.systemFont(ofSize: 14)
+        return UIFont(name: "IBMPlexSans-Mediumk", size: 16) ?? UIFont.systemFont(ofSize: 16)
     }
 }

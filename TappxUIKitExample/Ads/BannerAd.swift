@@ -64,7 +64,8 @@ extension BannerAd: TappxBannerViewDelegate {
     }
     
     func tappxBannerViewDidFail(bannerView: TappxBannerView, error: TappxErrorAd) {
-        updateLog(message: "banner".localized + "status.failed".localized + "\(error.localizedDescription)")
+        let errorMessage = TappxErrorManager.message(for: error.code)
+        updateLog(message: "banner".localized + "status.failed".localized + errorMessage)
         self.delegate?.bannerDidFailToLoad(bannerAd: self, error: error)
     }
     

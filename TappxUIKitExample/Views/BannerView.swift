@@ -7,8 +7,10 @@
 
 import UIKit
 
-// Vista para los anuncios de Banner y MREC
+// View Banner & MREC
 class BannerView: UIViewController {
+    
+    @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var advertisementView: UIView!
     @IBOutlet weak var statusView: UIView!
@@ -36,6 +38,7 @@ class BannerView: UIViewController {
         
         self.navigationItem.titleView = (self.navigationController?.viewControllers.first as? MainView)?.navigationItem.titleView
         configureView()
+        setupBackButton()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,14 +63,33 @@ class BannerView: UIViewController {
             break
         }
         
+        backgroundView.backgroundColor = ColorTheme.secondary
         titleLabel.textColor = ColorTheme.primary
         titleLabel.font = UIFont.titleFont()
-        statusView.backgroundColor = ColorTheme.secondary
+        statusView.backgroundColor = ColorTheme.darkGray
         configureStatus()
     }
     
+    private func setupBackButton() {
+        navigationItem.leftBarButtonItem = nil
+        navigationItem.hidesBackButton = true
+        
+        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .bold)
+        let backImage = UIImage(systemName: "chevron.backward", withConfiguration: config)?
+            .withRenderingMode(.alwaysOriginal)
+        
+        let backButton = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(backButtonTapped))
+        backButton.tintColor = .white
+        
+        navigationItem.rightBarButtonItem = backButton
+    }
+    
+    @objc private func backButtonTapped() {
+        navigationController?.popViewController(animated: true)
+    }
+    
     private func configureStatus() {
-        statusLabel.font = UIFont.bodyFont()
+        statusLabel.font = UIFont.titleFont()
        
         statusInputView.backgroundColor = ColorTheme.scrollBackground
         statusInputView.layer.cornerRadius = 8
@@ -75,7 +97,7 @@ class BannerView: UIViewController {
     }
     
     private func configureTextStatus() {
-        statusInputText.font = UIFont.bodyFont()
+        statusInputText.font = UIFont.secondFont()
         statusInputText.textColor = ColorTheme.secondaryVariant
         
     }
@@ -118,19 +140,19 @@ extension BannerView: BannerAdDelegate {
     }
     
     func bannerDidLoad(bannerAd: BannerAd) {
-        
+        // Use this method to implement an action when load
     }
     
     func bannerDidFailToLoad(bannerAd: BannerAd, error: any Error) {
-        
+        // Use this method to implement an action when fail to load
     }
     
     func bannerDidClick(bannerAd: BannerAd) {
-        
+        // Use this method to implement an action when press
     }
     
     func bannerDidClose(bannerAd: BannerAd) {
-        
+        // Use this method to implement an action when close
     }
     
     func rootViewController() -> UIViewController {

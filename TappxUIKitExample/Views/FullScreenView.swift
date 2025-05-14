@@ -7,7 +7,7 @@
 
 import UIKit
 
-// Vista para los anuncios de Interstitial y Rewarded
+// View Interstitial & Rewarded
 class FullScreenView: UIViewController {
     @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -25,6 +25,7 @@ class FullScreenView: UIViewController {
     @IBOutlet weak var showHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var showLabel: UILabel!
     
+    @IBOutlet weak var statusBoxBackgroundView: UIView!
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBOutlet weak var statusInputView: UIView!
@@ -45,6 +46,7 @@ class FullScreenView: UIViewController {
         
         self.navigationItem.titleView = (self.navigationController?.viewControllers.first as? MainView)?.navigationItem.titleView
         configureView()
+        setupBackButton()
     }
     
     private func configureView() {
@@ -75,8 +77,27 @@ class FullScreenView: UIViewController {
         configureStatus()
     }
     
+    private func setupBackButton() {
+        navigationItem.leftBarButtonItem = nil
+        navigationItem.hidesBackButton = true
+        
+        let config = UIImage.SymbolConfiguration(pointSize: 20, weight: .bold)
+        let backImage = UIImage(systemName: "chevron.backward", withConfiguration: config)?
+            .withRenderingMode(.alwaysOriginal)
+        
+        let backButton = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(backButtonTapped))
+        backButton.tintColor = .white
+        
+        navigationItem.rightBarButtonItem = backButton
+    }
+    
+    @objc private func backButtonTapped() {
+        navigationController?.popViewController(animated: true)
+    }
+    
     private func configureStatus() {
-        statusLabel.font = UIFont.bodyFont()
+        statusBoxBackgroundView.backgroundColor = ColorTheme.darkGray
+        statusLabel.font = UIFont.titleFont()
        
         statusInputView.backgroundColor = ColorTheme.scrollBackground
         statusInputView.layer.cornerRadius = 8
@@ -151,7 +172,7 @@ class FullScreenView: UIViewController {
 
 extension FullScreenView: InterstitialAdDelegate {
     func interstitialDidLoad(_ interstitialAd: InterstitialAd) {
-        // Use this method to implement an action when loading
+        // Use this method to implement an action when load
     }
     
     func interstitialDidFailToLoad(_ interstitialAd: InterstitialAd, error: any Error) {
@@ -163,15 +184,15 @@ extension FullScreenView: InterstitialAdDelegate {
     }
     
     func interstitialDidClose(_ interstitialAd: InterstitialAd) {
-        //  Use this method to implement an action when close
+        // Use this method to implement an action when close
     }
     
     func interstitialDidPress(_ interstitialAd: InterstitialAd) {
-        //  Use this method to implement an action when press
+        // Use this method to implement an action when press
     }
     
     func interstitialDidDisappear(_ interstitialAd: InterstitialAd) {
-        //  Use this method to implement an action when disappear
+        // Use this method to implement an action when disappear
     }
     
     func updateInterstitialLog(message: String) {
@@ -182,35 +203,35 @@ extension FullScreenView: InterstitialAdDelegate {
 
 extension FullScreenView: RewardedAdDelegate {
     func rewardedAdDidFinishLoad(rewardedAd: RewardedAd) {
-        //Use this method to implement an action when loading
+        // Use this method to implement an action when load
     }
     
     func rewardedAdDidFailToLoad(rewardedAd: RewardedAd, withError error: any Error) {
-        //  Use this method to implement an action when tail to load
+        // Use this method to implement an action when tail to load
     }
     
     func rewardedAdDidClick(rewardedAd: RewardedAd) {
-        //  Use this method to implement an action when press
+        // Use this method to implement an action when press
     }
     
     func rewardedAdDidClose(rewardedAd: RewardedAd) {
-        //  Use this method to implement an action when close
+        // Use this method to implement an action when close
     }
     
     func rewardedAdDidRewardUser(rewardedAd: RewardedAd) {
-        //  Use this method to implement an action when get reward
+        // Use this method to implement an action when get reward
     }
     
     func rewardedAdDidAppear(rewardedAd: RewardedAd) {
-        //  Use this method to implement an action when shows
+        // Use this method to implement an action when shows
     }
     
     func rewardedAdVideoClosed(rewardedAd: RewardedAd) {
-        //  Use this method to implement an action when close
+        // Use this method to implement an action when close
     }
     
     func rewardedAdPlaybackFailed(rewardedAd: RewardedAd) {
-        //  Use this method to implement an action when failed
+        // Use this method to implement an action when failed
     }
     
     func updateRewarderLog(message: String) {

@@ -10,9 +10,17 @@ import TappxFramework
 
 class MainView: UIViewController {
     @IBOutlet weak var versionText: UILabel!
+    
+    @IBOutlet weak var bannerImage: UIImageView!
     @IBOutlet weak var bannerLabel: UILabel!
+   
+    @IBOutlet weak var MRECImage: UIImageView!
     @IBOutlet weak var MRECLabel: UILabel!
+    
+    @IBOutlet weak var interstitialImage: UIImageView!
     @IBOutlet weak var interstitialLabel: UILabel!
+    
+    @IBOutlet weak var rewardedImage: UIImageView!
     @IBOutlet weak var rewardedLabel: UILabel!
     @IBOutlet var mainView: UIView!
     
@@ -44,8 +52,8 @@ class MainView: UIViewController {
         titleView.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 30),
-            imageView.heightAnchor.constraint(equalToConstant: 30),
+            imageView.widthAnchor.constraint(equalToConstant: 36),
+            imageView.heightAnchor.constraint(equalToConstant: 36),
             
             stackView.centerYAnchor.constraint(equalTo: titleView.centerYAnchor),
             stackView.centerXAnchor.constraint(equalTo: titleView.centerXAnchor),
@@ -54,31 +62,41 @@ class MainView: UIViewController {
         ])
         
         self.navigationItem.titleView = titleView
-        navigationItem.backButtonTitle = "empty".localized
     }
     
     private func setupView() {
+        imageShadow(bannerImage)
         bannerLabel.text = "button.banner".localized
         bannerLabel.font = UIFont.bodyFont()
         bannerLabel.textColor = ColorTheme.primaryVariant
        
+        imageShadow(MRECImage)
         MRECLabel.text = "button.MREC".localized
         MRECLabel.font = UIFont.bodyFont()
         MRECLabel.textColor = ColorTheme.primaryVariant
         
+        imageShadow(interstitialImage)
         interstitialLabel.text = "button.interstitial".localized
         interstitialLabel.font = UIFont.bodyFont()
         interstitialLabel.textColor = ColorTheme.primaryVariant
         
+        imageShadow(rewardedImage)
         rewardedLabel.text = "button.rewarded".localized
         rewardedLabel.font = UIFont.bodyFont()
         rewardedLabel.textColor = ColorTheme.primaryVariant
         
         versionText.text = "\("text.version".localized) \(TappxFramework.sdkVersion())"
         versionText.font = UIFont.secondFont()
-        versionText.textColor = ColorTheme.primaryVariant
         
         mainView.backgroundColor = ColorTheme.secondary
+    }
+    
+    private func imageShadow(_ image: UIImageView) {
+        image.layer.shadowColor = UIColor.black.cgColor
+        image.layer.shadowOpacity = 0.3
+        image.layer.shadowOffset = CGSize(width: 0, height: 1)
+        image.layer.shadowRadius = 2
+        image.layer.masksToBounds = false
     }
     
     @IBAction func bannerAction(_ sender: Any) {

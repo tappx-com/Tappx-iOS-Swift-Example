@@ -66,7 +66,8 @@ extension InterstitialAd: TappxInterstitialAdDelegate {
     
     func tappxInterstitialAdDidFail(interstitialAd: TappxInterstitialAd, error: TappxErrorAd) {
         self.interstitialAd = nil
-        updateLog(message: "interstitial".localized + "status.failed".localized + "\(error.localizedDescription)")
+        let errorMessage = TappxErrorManager.message(for: error.code)
+        updateLog(message: "interstitial".localized + "status.failed".localized + errorMessage)
         self.delegate?.interstitialDidFailToLoad(self, error: error)
     }
     

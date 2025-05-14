@@ -101,7 +101,8 @@ extension RewardedAd: TappxRewardedAdDelegate {
     
     func tappxRewardedAdDidFail(rewardedAd: TappxRewardedAd, error: TappxErrorAd) {
         self.rewardedAd = nil
-        updateLog(message: "rewarded".localized + "status.failed".localized + "\(error)")
+        let errorMessage = TappxErrorManager.message(for: error.code)
+        updateLog(message: "rewarded".localized + "status.failed".localized + errorMessage)
         self.rewardedAd = nil
         self.delegate?.rewardedAdDidFailToLoad(rewardedAd: self, withError: error)
     }

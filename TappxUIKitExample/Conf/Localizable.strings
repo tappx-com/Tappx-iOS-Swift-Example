@@ -7,7 +7,7 @@
 
 
 /* TEXTS */
-"app_name" = "Tappx SDK App";
+"app_name" = " Tappx SDK App";
 "text.version" = "SDK Version: ";
 "text.status" = "Status";
 "empty" = "";
@@ -28,7 +28,6 @@
 "status.completed" = " video completed";
 "status.reward" = "User earned reward";
 
-
 /* BUTTONS */
 "button.banner" = "Banner";
 "button.MREC" = "MREC";
@@ -44,3 +43,11 @@
 "navigation.name.fullScreen" = "FullScreen";
 "navigation.id.banner" = "goToBannerView";
 "navigation.id.fullScreen" = "goToFullScreen";
+
+/* ERRORS */
+"error.noFill" = "No ad inventory available";
+"error.serverError" = "Ad server error or heck your internet connection";
+"error.developerError" = "Code error: check your code, appKey or endpoint";
+"error.viewInconsistency" = "Detected inconsistency in ad view";
+"error.cancelled" = "Ad request was cancelled";
+"error.noConnection" = "No internet connection detected";

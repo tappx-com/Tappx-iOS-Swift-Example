@@ -32,6 +32,7 @@
 		BA4F744BEE8ACAC649DC21CB /* Pods_TappxUIKitExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6F2816DEA9C98A2453745 /* Pods_TappxUIKitExample.framework */; };
 		E6B448682DCDFD3D00780594 /* AdType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B448672DCDFD3D00780594 /* AdType.swift */; };
 		E6B4486A2DCDFD9200780594 /* AdSubType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B448692DCDFD9200780594 /* AdSubType.swift */; };
+		E6B448A02DD39ED100780594 /* TappxErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B4489F2DD39ED100780594 /* TappxErrorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		E6B448632DCDF89400780594 /* TappxUIKitExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TappxUIKitExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		E6B448672DCDFD3D00780594 /* AdType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdType.swift; sourceTree = "<group>"; };
 		E6B448692DCDFD9200780594 /* AdSubType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdSubType.swift; sourceTree = "<group>"; };
+		E6B4489F2DD39ED100780594 /* TappxErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappxErrorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				E6B448672DCDFD3D00780594 /* AdType.swift */,
+				E6B4489F2DD39ED100780594 /* TappxErrorManager.swift */,
 				E6B448692DCDFD9200780594 /* AdSubType.swift */,
 				56F178C72DCA1CF30064DB33 /* BannerAd.swift */,
 				56F178C92DCA1CFD0064DB33 /* MRECAd.swift */,
@@ -309,6 +312,7 @@
 				56F178D62DCA1F130064DB33 /* MainView.swift in Sources */,
 				56F178C82DCA1CF30064DB33 /* BannerAd.swift in Sources */,
 				E6B4486A2DCDFD9200780594 /* AdSubType.swift in Sources */,
+				E6B448A02DD39ED100780594 /* TappxErrorManager.swift in Sources */,
 				56F178C52DCA1B270064DB33 /* StringExtension.swift in Sources */,
 				56F178CA2DCA1CFD0064DB33 /* MRECAd.swift in Sources */,
 				56F178CC2DCA1D1F0064DB33 /* InterstitialAd.swift in Sources */,

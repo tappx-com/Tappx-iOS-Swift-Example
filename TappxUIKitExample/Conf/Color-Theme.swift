@@ -13,6 +13,7 @@ struct ColorTheme {
     static let secondary = UIColor(hex: "#f2f2f2") // Gray
     static let secondaryVariant = UIColor(hex: "#ffffff") // White
     static let scrollBackground = UIColor(hex: "#333333") // Dark grey
+    static let darkGray = UIColor(hex: "#e0e0e0") // Gray
     static let switchOn = UIColor(hex: "#7ce080") // Green
     static let switchOff = UIColor(hex: "#606060") // Gray
     
