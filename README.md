@@ -38,7 +38,7 @@ Other features demonstrated:
 
 ## 📲 Downloads
 
-For the latest builds of this demo app, check the [Releases](https://github.com/tappx-com/Tappx-Android-Kotlin-Example/releases) section.
+For the latest builds of this demo app, check the [Releases](https://github.com/tappx-com/Tappx-iOS-Swift-Example/releases) section.
 
 ---
 
