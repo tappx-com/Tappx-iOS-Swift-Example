@@ -9,7 +9,7 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>ReneBieder-FaktumSemiBold.otf</string>
+		<string>ReneBieder-FaktumSemiBold.ttf</string>
 		<string>IBMPlexSans-Medium.ttf</string>
 		<string>IBMPlexSans-SemiBold.ttf</string>
 	</array>

@@ -7,7 +7,7 @@
 
 
 /* TEXTS */
-"app_name" = " Tappx SDK App";
+"app.name" = "Tappx SDK App";
 "text.version" = "SDK Version: ";
 "text.status" = "Status";
 "empty" = "";

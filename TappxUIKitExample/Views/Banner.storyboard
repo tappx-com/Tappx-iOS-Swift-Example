@@ -23,6 +23,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8Y-nO-Bf8">
+                                <rect key="frame" x="0.0" y="59" width="393" height="10"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Y28-w3-IWw"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZs-ra-EW4">
                                 <rect key="frame" x="16" y="134.66666666666663" width="361" height="320"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,10 +81,13 @@
                         <constraints>
                             <constraint firstItem="4FO-nV-djg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6E3-fN-GFy"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FZs-ra-EW4" secondAttribute="trailing" constant="16" id="74E-XQ-1cD"/>
+                            <constraint firstItem="x8Y-nO-Bf8" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="DWa-5e-7Lg"/>
                             <constraint firstItem="p0K-tT-KkO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="35" id="DYF-fM-YXX"/>
                             <constraint firstItem="4FO-nV-djg" firstAttribute="top" secondItem="FZs-ra-EW4" secondAttribute="bottom" constant="20" id="Efu-Qj-O34"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4FO-nV-djg" secondAttribute="trailing" id="MX6-hM-wEd"/>
                             <constraint firstItem="FZs-ra-EW4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="dPC-eu-Yhc"/>
+                            <constraint firstAttribute="trailing" secondItem="x8Y-nO-Bf8" secondAttribute="trailing" id="euE-8T-Mwk"/>
+                            <constraint firstItem="x8Y-nO-Bf8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mud-ia-wcW"/>
                             <constraint firstAttribute="bottom" secondItem="4FO-nV-djg" secondAttribute="bottom" id="rq5-Qw-qwh"/>
                             <constraint firstItem="p0K-tT-KkO" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wxZ-id-ul4"/>
                             <constraint firstItem="FZs-ra-EW4" firstAttribute="top" secondItem="p0K-tT-KkO" secondAttribute="bottom" constant="20" id="zlY-aT-nlg"/>
@@ -86,6 +96,7 @@
                     <connections>
                         <outlet property="advertisementView" destination="FZs-ra-EW4" id="YRy-Vp-gpO"/>
                         <outlet property="backgroundView" destination="5EZ-qb-Rvc" id="fbh-xJ-dGT"/>
+                        <outlet property="headerBackgroundView" destination="x8Y-nO-Bf8" id="WWo-QK-Gcr"/>
                         <outlet property="statusInputText" destination="KY6-rq-i6y" id="S4H-3G-jjl"/>
                         <outlet property="statusInputView" destination="i3P-cm-mOJ" id="COU-So-rS5"/>
                         <outlet property="statusLabel" destination="gg4-1x-SAJ" id="bHh-yA-oFQ"/>
@@ -103,7 +114,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

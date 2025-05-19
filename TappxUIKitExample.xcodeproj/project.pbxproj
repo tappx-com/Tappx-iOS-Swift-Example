@@ -20,7 +20,6 @@
 		56F178B82DC964200064DB33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F178B72DC964200064DB33 /* Constants.swift */; };
 		56F178BD2DC9F0CA0064DB33 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56F178BB2DC9F0CA0064DB33 /* IBMPlexSans-SemiBold.ttf */; };
 		56F178BE2DC9F0CA0064DB33 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56F178BC2DC9F0CA0064DB33 /* IBMPlexSans-Medium.ttf */; };
-		56F178C02DC9F1600064DB33 /* ReneBieder-FaktumSemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56F178BF2DC9F1600064DB33 /* ReneBieder-FaktumSemiBold.otf */; };
 		56F178C52DCA1B270064DB33 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F178C42DCA1B270064DB33 /* StringExtension.swift */; };
 		56F178C82DCA1CF30064DB33 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F178C72DCA1CF30064DB33 /* BannerAd.swift */; };
 		56F178CA2DCA1CFD0064DB33 /* MRECAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F178C92DCA1CFD0064DB33 /* MRECAd.swift */; };
@@ -33,6 +32,8 @@
 		E6B448682DCDFD3D00780594 /* AdType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B448672DCDFD3D00780594 /* AdType.swift */; };
 		E6B4486A2DCDFD9200780594 /* AdSubType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B448692DCDFD9200780594 /* AdSubType.swift */; };
 		E6B448A02DD39ED100780594 /* TappxErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B4489F2DD39ED100780594 /* TappxErrorManager.swift */; };
+		E6DCCDC52DDB6C6F001F5343 /* ReneBieder-FaktumSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6DCCDC42DDB6C6F001F5343 /* ReneBieder-FaktumSemiBold.ttf */; };
+		E6DCCDC72DDB6CAC001F5343 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DCCDC62DDB6CAC001F5343 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +54,6 @@
 		56F178B72DC964200064DB33 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		56F178BB2DC9F0CA0064DB33 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		56F178BC2DC9F0CA0064DB33 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
-		56F178BF2DC9F1600064DB33 /* ReneBieder-FaktumSemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReneBieder-FaktumSemiBold.otf"; sourceTree = "<group>"; };
 		56F178C42DCA1B270064DB33 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		56F178C72DCA1CF30064DB33 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		56F178C92DCA1CFD0064DB33 /* MRECAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRECAd.swift; sourceTree = "<group>"; };
@@ -67,6 +67,8 @@
 		E6B448672DCDFD3D00780594 /* AdType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdType.swift; sourceTree = "<group>"; };
 		E6B448692DCDFD9200780594 /* AdSubType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdSubType.swift; sourceTree = "<group>"; };
 		E6B4489F2DD39ED100780594 /* TappxErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappxErrorManager.swift; sourceTree = "<group>"; };
+		E6DCCDC42DDB6C6F001F5343 /* ReneBieder-FaktumSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReneBieder-FaktumSemiBold.ttf"; sourceTree = "<group>"; };
+		E6DCCDC62DDB6CAC001F5343 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				56F178A22DC959920064DB33 /* LaunchScreen.storyboard */,
+				E6DCCDC62DDB6CAC001F5343 /* BaseView.swift */,
 				56F178D52DCA1F130064DB33 /* MainView.swift */,
 				567254512DCA23D900783DF3 /* Main.storyboard */,
 				56F178D12DCA1D900064DB33 /* BannerView.swift */,
@@ -146,7 +149,7 @@
 			children = (
 				56F178BC2DC9F0CA0064DB33 /* IBMPlexSans-Medium.ttf */,
 				56F178BB2DC9F0CA0064DB33 /* IBMPlexSans-SemiBold.ttf */,
-				56F178BF2DC9F1600064DB33 /* ReneBieder-FaktumSemiBold.otf */,
+				E6DCCDC42DDB6C6F001F5343 /* ReneBieder-FaktumSemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -249,8 +252,8 @@
 				56F178B42DC963A10064DB33 /* Localizable.strings in Resources */,
 				56F178A12DC959920064DB33 /* Assets.xcassets in Resources */,
 				56F178BD2DC9F0CA0064DB33 /* IBMPlexSans-SemiBold.ttf in Resources */,
-				56F178C02DC9F1600064DB33 /* ReneBieder-FaktumSemiBold.otf in Resources */,
 				567254542DCA427400783DF3 /* Banner.storyboard in Resources */,
+				E6DCCDC52DDB6C6F001F5343 /* ReneBieder-FaktumSemiBold.ttf in Resources */,
 				56F178BE2DC9F0CA0064DB33 /* IBMPlexSans-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +314,7 @@
 				56F178B82DC964200064DB33 /* Constants.swift in Sources */,
 				56F178D62DCA1F130064DB33 /* MainView.swift in Sources */,
 				56F178C82DCA1CF30064DB33 /* BannerAd.swift in Sources */,
+				E6DCCDC72DDB6CAC001F5343 /* BaseView.swift in Sources */,
 				E6B4486A2DCDFD9200780594 /* AdSubType.swift in Sources */,
 				E6B448A02DD39ED100780594 /* TappxErrorManager.swift in Sources */,
 				56F178C52DCA1B270064DB33 /* StringExtension.swift in Sources */,

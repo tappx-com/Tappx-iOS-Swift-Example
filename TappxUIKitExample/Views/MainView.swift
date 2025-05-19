@@ -8,7 +8,8 @@
 import UIKit
 import TappxFramework
 
-class MainView: UIViewController {
+class MainView: BaseView {
+    @IBOutlet weak var headerBackgroundView: UIView!
     @IBOutlet weak var versionText: UILabel!
     
     @IBOutlet weak var bannerImage: UIImageView!
@@ -27,44 +28,11 @@ class MainView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        configNavigationBar()
-    }
-
-    private func configNavigationBar() {
-        let titleView = UIView()
-        
-        let imageView = UIImageView(image: UIImage(named: "logo tappx"))
-        imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let label = UILabel()
-        label.text = "app_name".localized
-        label.textColor = .white
-        label.font = UIFont.headerFont()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        let stackView = UIStackView(arrangedSubviews: [imageView, label])
-        stackView.axis = .horizontal
-        stackView.spacing = 8
-        stackView.alignment = .center
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        titleView.addSubview(stackView)
-        
-        NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 36),
-            imageView.heightAnchor.constraint(equalToConstant: 36),
-            
-            stackView.centerYAnchor.constraint(equalTo: titleView.centerYAnchor),
-            stackView.centerXAnchor.constraint(equalTo: titleView.centerXAnchor),
-            stackView.leadingAnchor.constraint(greaterThanOrEqualTo: titleView.leadingAnchor),
-            stackView.trailingAnchor.constraint(lessThanOrEqualTo: titleView.trailingAnchor)
-        ])
-        
-        self.navigationItem.titleView = titleView
     }
     
     private func setupView() {
+        headerBackgroundView.backgroundColor = ColorTheme.primary
+        
         imageShadow(bannerImage)
         bannerLabel.text = "button.banner".localized
         bannerLabel.font = UIFont.bodyFont()

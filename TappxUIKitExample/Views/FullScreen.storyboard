@@ -26,6 +26,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-dW-E7A">
+                                <rect key="frame" x="0.0" y="59" width="393" height="10"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="eU2-LQ-y1L"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tux-fD-94s">
                                 <rect key="frame" x="109" y="132" width="175" height="50"/>
                                 <subviews>
@@ -184,12 +191,14 @@
                             <constraint firstItem="GaJ-MV-EP7" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="40" id="Lan-FH-sFV"/>
                             <constraint firstItem="a8d-Mo-H11" firstAttribute="top" secondItem="GaJ-MV-EP7" secondAttribute="bottom" constant="30" id="N4f-ox-cZ3"/>
                             <constraint firstItem="NRv-M5-kx3" firstAttribute="top" secondItem="3f8-gU-mxs" secondAttribute="bottom" constant="91" id="Ngw-fc-OPd"/>
+                            <constraint firstItem="dpe-dW-E7A" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Pk7-1e-Qex"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GaJ-MV-EP7" secondAttribute="trailing" constant="40" id="RFS-Lv-YIq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NRv-M5-kx3" secondAttribute="trailing" constant="40" id="Vta-Jv-0VZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tMj-0d-8go" secondAttribute="trailing" constant="40" id="XHn-h4-tAe"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WsG-4o-VbV" secondAttribute="trailing" constant="40" id="Xoe-CL-HkC"/>
                             <constraint firstItem="mK1-9k-twG" firstAttribute="top" secondItem="GaJ-MV-EP7" secondAttribute="bottom" constant="45" id="eEF-at-Xug"/>
                             <constraint firstItem="GaJ-MV-EP7" firstAttribute="top" secondItem="tMj-0d-8go" secondAttribute="bottom" constant="20" id="hU0-S1-kem"/>
+                            <constraint firstItem="dpe-dW-E7A" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jWL-32-7yd"/>
                             <constraint firstItem="tMj-0d-8go" firstAttribute="top" secondItem="NRv-M5-kx3" secondAttribute="bottom" constant="20" id="jbp-Be-HHA"/>
                             <constraint firstItem="a8d-Mo-H11" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jxc-pw-NkF"/>
                             <constraint firstItem="tMj-0d-8go" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="40" id="kEG-9B-nm7"/>
@@ -197,6 +206,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WsG-4o-VbV" secondAttribute="bottom" constant="40" id="owQ-MM-p0K"/>
                             <constraint firstItem="Tux-fD-94s" firstAttribute="top" secondItem="3f8-gU-mxs" secondAttribute="bottom" constant="16" id="oxY-ld-n88"/>
                             <constraint firstItem="3f8-gU-mxs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="35" id="qKl-0p-vp9"/>
+                            <constraint firstItem="dpe-dW-E7A" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rBH-eq-7QH"/>
                             <constraint firstItem="3f8-gU-mxs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vea-Tw-7WA"/>
                         </constraints>
                     </view>
@@ -204,6 +214,7 @@
                         <outlet property="autoShowSwitch" destination="4bU-k0-1Mm" id="kpN-ac-h4N"/>
                         <outlet property="backgroundView" destination="5EZ-qb-Rvc" id="cfr-Sg-8hC"/>
                         <outlet property="buttonsConstraint" destination="Ngw-fc-OPd" id="myv-vP-n5T"/>
+                        <outlet property="headerBackgroundView" destination="dpe-dW-E7A" id="D2g-DM-iab"/>
                         <outlet property="loadLabel" destination="qNr-ux-5B4" id="g8W-it-2ir"/>
                         <outlet property="readyButtonView" destination="tMj-0d-8go" id="y4j-wz-cqi"/>
                         <outlet property="readyHeightConstraint" destination="amv-Ho-yRe" id="Wvm-8y-nzQ"/>
@@ -230,7 +241,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -9,7 +9,7 @@ import UIKit
 
 // View Banner & MREC
 class BannerView: UIViewController {
-    
+    @IBOutlet weak var headerBackgroundView: UIView!
     @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var advertisementView: UIView!
@@ -71,6 +71,8 @@ class BannerView: UIViewController {
     }
     
     private func setupBackButton() {
+        headerBackgroundView.backgroundColor = ColorTheme.primary
+        
         navigationItem.leftBarButtonItem = nil
         navigationItem.hidesBackButton = true
         

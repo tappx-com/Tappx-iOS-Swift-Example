@@ -9,6 +9,7 @@ import UIKit
 
 // View Interstitial & Rewarded
 class FullScreenView: UIViewController {
+    @IBOutlet weak var headerBackgroundView: UIView!
     @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var switchLabel: UILabel!
@@ -78,6 +79,8 @@ class FullScreenView: UIViewController {
     }
     
     private func setupBackButton() {
+        headerBackgroundView.backgroundColor = ColorTheme.primary
+        
         navigationItem.leftBarButtonItem = nil
         navigationItem.hidesBackButton = true
         

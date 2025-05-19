@@ -59,6 +59,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         appearance.backgroundColor = ColorTheme.primary
         appearance.backgroundEffect = nil
+        appearance.shadowColor = .clear
         
         appearance.titleTextAttributes = [
             .foregroundColor: ColorTheme.secondaryVariant ?? UIColor.white,
