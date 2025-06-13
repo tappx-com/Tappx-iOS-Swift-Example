@@ -11,10 +11,10 @@ import TappxFramework
 class MRECAd: BannerAd {
     private var tappxMREC: TappxBannerView?
     
-    override func loadBanner(size: TappxBannerSize = .size300x250, position: TappxBannerPosition = .bottom) {
+    override func loadBanner(size: TappxBannerSize = .size300x250) {
         removeBanner()
         
-        self.tappxMREC = TappxBannerView(delegate: self, size: size, position: position)
+        self.tappxMREC = TappxBannerView(delegate: self, size: size)
     
         self.delegate?.addTappxBannerViewToView(bannerView: self.tappxMREC!)
         

@@ -29,10 +29,10 @@ class BannerAd: NSObject {
         self.delegate = delegate
     }
     
-    func loadBanner(size: TappxBannerSize = .smartBanner, position: TappxBannerPosition = .bottom) {
+    func loadBanner(size: TappxBannerSize = .smartBanner) {
         removeBanner()
         
-        self.bannerAdd = TappxBannerView(delegate: self, size: size, position: position)
+        self.bannerAdd = TappxBannerView(delegate: self, size: size)
     
         self.delegate?.addTappxBannerViewToView(bannerView: self.bannerAdd!)
         
