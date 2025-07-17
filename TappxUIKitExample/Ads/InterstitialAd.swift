@@ -28,18 +28,10 @@ class InterstitialAd: NSObject {
         self.delegate = delegate
     }
     
-    func load(tappxKey: String? = nil) {
+    func load() {
         self.interstitialAd = TappxInterstitialAd(delegate: self)
         // Call setAutoShowWhenReady only for the autoShow case
         self.interstitialAd?.setAutoShowWhenReady(enable: self.autoShow)
-        
-        if let tappxKey = tappxKey {
-            let settings = TappxSettings()
-            settings.setKeywords(keywords: [tappxKey])
-            self.interstitialAd?.load(settings: settings)
-            return
-        }
-        
         self.interstitialAd?.load()
     }
     

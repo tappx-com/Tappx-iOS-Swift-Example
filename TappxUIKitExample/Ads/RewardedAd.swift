@@ -29,16 +29,9 @@ class RewardedAd: NSObject {
         self.delegate = delegate
     }
     
-    func load(tappxKey: String? = nil) {
+    func load() {
         self.rewardedAd = TappxRewardedAd(delegate: self)
         self.rewardedAd?.setAutoShowWhenReady(enable: false)
-        if let tappxKey = tappxKey {
-            let settings = TappxSettings()
-            settings.setKeywords(keywords: [tappxKey])
-            self.rewardedAd?.load(settings: settings)
-            return
-        }
-        
         self.rewardedAd?.load()
     }
     
