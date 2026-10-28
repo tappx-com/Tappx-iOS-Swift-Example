@@ -1,0 +1,15 @@
+{
+  "originHash" : "6ef1d741f5d040f665482d278268df67e74a49cf63b65d2f16faf24938779847",
+  "pins" : [
+    {
+      "identity" : "tappxsdk-swift-package-manager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tappx-com/TappxSDK-swift-package-manager.git",
+      "state" : {
+        "revision" : "e8aaf2e225335ac1b2e53d32a69d3494b870b21f",
+        "version" : "4.2.16"
+      }
+    }
+  ],
+  "version" : 3
+}
